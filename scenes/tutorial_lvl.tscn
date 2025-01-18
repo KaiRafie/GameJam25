@@ -1,3 +1,41 @@
-[gd_scene format=3 uid="uid://h1idurg6al0j"]
+[gd_scene load_steps=7 format=3 uid="uid://h1idurg6al0j"]
+
+[ext_resource type="Script" path="res://scripts/tutorial_lvl.gd" id="1_8cjb7"]
+[ext_resource type="Texture2D" uid="uid://ctfymaie4tqq8" path="res://Assets/images/tiles.png" id="1_xnqv0"]
+[ext_resource type="PackedScene" uid="uid://b7xc6ypn1lruc" path="res://scenes/seed.tscn" id="2_rimfn"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n5rir"]
+texture = ExtResource("1_xnqv0")
+texture_region_size = Vector2i(26, 26)
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_mpxpa"]
+tile_size = Vector2i(26, 26)
+sources/0 = SubResource("TileSetAtlasSource_n5rir")
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ngwxo"]
+distance = -1.0
 
 [node name="tutorialLvl" type="Node2D"]
+script = ExtResource("1_8cjb7")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_mpxpa")
+rendering_quadrant_size = 20
+format = 2
+layer_0/tile_data = PackedInt32Array(65533, 0, 0, 65534, 65536, 0, 65535, 0, 0, 0, 65536, 0, 1, 0, 0, 2, 65536, 0, 3, 0, 0, 4, 65536, 0, 5, 0, 0, 6, 65536, 0, 7, 0, 1, 8, 65536, 1, 9, 0, 1, 10, 65536, 1)
+
+[node name="Seed" parent="." instance=ExtResource("2_rimfn")]
+position = Vector2(-51, -43)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-51, -43)
+zoom = Vector2(3, 3)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_ngwxo")
