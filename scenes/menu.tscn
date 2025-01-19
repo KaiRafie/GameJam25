@@ -1,0 +1,61 @@
+[gd_scene load_steps=8 format=3 uid="uid://dc85mwkssfmwq"]
+
+[ext_resource type="Script" path="res://scenes/menu.gd" id="1_ogxpe"]
+[ext_resource type="Texture2D" uid="uid://d28d5e26w6ykk" path="res://Assets/icons/Play_button.png" id="2_mgy1y"]
+[ext_resource type="Texture2D" uid="uid://b8c1bpx7ljq4k" path="res://Assets/images/pixil-layer-Background Copy.png" id="2_xc6fy"]
+[ext_resource type="Texture2D" uid="uid://q4pkhj7putu2" path="res://Assets/images/menutitle.png" id="3_dwqfj"]
+[ext_resource type="Texture2D" uid="uid://xunx7phf8oii" path="res://Assets/icons/Credit_button.png" id="3_umck4"]
+[ext_resource type="Texture2D" uid="uid://bh6i6647wy5ga" path="res://Assets/icons/Exit_button.png" id="4_i0x5w"]
+[ext_resource type="Texture2D" uid="uid://cfxbl300q4i2q" path="res://Assets/icons/Tutorial_button.png" id="5_rccjx"]
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ogxpe")
+
+[node name="Pixil-layer-backgroundCopy" type="Sprite2D" parent="."]
+position = Vector2(0.250005, 2.5)
+scale = Vector2(3.38676, 3.39062)
+texture = ExtResource("2_xc6fy")
+
+[node name="Menutitle" type="Sprite2D" parent="."]
+position = Vector2(8, -190)
+scale = Vector2(8.83077, 10.6106)
+texture = ExtResource("3_dwqfj")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -91.0
+offset_top = -87.0
+offset_right = 99.0
+offset_bottom = 285.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PlayButton" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_mgy1y")
+
+[node name="CreditsButton" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("3_umck4")
+
+[node name="ExitButton" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("4_i0x5w")
+
+[node name="TutorialButton" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("5_rccjx")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_PlayButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/CreditsButton" to="." method="_on_CreditsButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/ExitButton" to="." method="_on_ExitButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/TutorialButton" to="." method="_on_TutorialButton_pressed"]
