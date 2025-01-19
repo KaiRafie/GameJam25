@@ -1,6 +1,12 @@
+Node
 CollisionShape2D
+Sprite2D
 StaticBody2D
-Camera2D
+Label
 AnimatedSprite2D
+Area2D
+CollisionPolygon2D
+RichTextLabel
+Camera2D
 CharacterBody2D
 TileMap
