@@ -43,16 +43,6 @@ script = ExtResource("1_8cjb7")
 unique_name_in_owner = true
 script = ExtResource("2_hgqxp")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="GameManager"]
-
-[node name="sunScore" type="Label" parent="GameManager/CanvasLayer"]
-offset_right = 40.0
-offset_bottom = 23.0
-
-[node name="dropletScore" type="Label" parent="GameManager/CanvasLayer"]
-offset_right = 40.0
-offset_bottom = 23.0
-
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
 position = Vector2(1, 0)
@@ -69,6 +59,29 @@ position = Vector2(1, -22)
 zoom = Vector2(3, 3)
 limit_bottom = 232
 limit_smoothed = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Seed"]
+
+[node name="sunScore" type="Label" parent="Seed/CanvasLayer"]
+unique_name_in_owner = true
+offset_left = -76.0
+offset_top = -155.0
+offset_right = -36.0
+offset_bottom = -132.0
+text = "hello"
+
+[node name="dropletScore" type="Label" parent="Seed/CanvasLayer"]
+unique_name_in_owner = true
+anchors_preset = -1
+anchor_left = 0.027
+anchor_top = -0.092
+anchor_right = 0.027
+anchor_bottom = -0.092
+offset_left = -51.104
+offset_top = -93.384
+offset_right = -12.104
+offset_bottom = 5.616
+text = "hello"
 
 [node name="instructions" type="Node" parent="."]
 

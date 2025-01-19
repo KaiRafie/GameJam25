@@ -2,8 +2,8 @@ extends Node
 
 var droplets = 0
 var suns = 0
-@onready var sun_score: Label = $CanvasLayer/sunScore
-@onready var droplet_score: Label = $CanvasLayer/dropletScore
+@onready var sun_score: Label = %sunScore
+@onready var droplet_score: Label = %dropletScore
 
 
 func add_droplet():
