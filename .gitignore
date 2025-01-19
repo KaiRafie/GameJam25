@@ -31,13 +31,9 @@
 *.out
 *.app
 
-<<<<<<< HEAD
-.godot/editor/
-.godot/
+.godot/editor/*
 .import/
 export.cfg
-=======
 .godot/
 .godot/editor/
 .import/
->>>>>>> origin/viv-menu
