@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+.godot/
+.godot/editor/
+.import/
