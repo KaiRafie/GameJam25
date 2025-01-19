@@ -31,6 +31,7 @@
 *.out
 *.app
 
+.godot/editor/
 .godot/
 .import/
 export.cfg
