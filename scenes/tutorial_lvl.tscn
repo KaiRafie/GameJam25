@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://dddwe7854uwlf" path="res://scenes/sun.tscn" id="7_jwcy2"]
 [ext_resource type="PackedScene" uid="uid://cddrdbjf85cxw" path="res://scenes/secret_tile.tscn" id="8_3qeq1"]
 [ext_resource type="PackedScene" path="res://scenes/killzone.tscn" id="9_231ii"]
+[ext_resource type="Texture2D" uid="uid://dapl1pgm6xbri" path="res://Assets/icons/spacebar_icon.png" id="10_wixej"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dmxo2"]
 texture = ExtResource("1_xnqv0")
@@ -78,22 +79,12 @@ offset_right = 184.0
 offset_bottom = -75.0
 text = "Roll left and right using           &"
 
-[node name="ArrowsIcon" type="Sprite2D" parent="instructions/Label"]
-position = Vector2(230, 12)
-scale = Vector2(0.35625, 0.307471)
-texture = ExtResource("4_0vt3d")
-
 [node name="Label2" type="Label" parent="instructions"]
 offset_left = 44.0
 offset_top = -70.0
 offset_right = 210.0
 offset_bottom = -44.0
 text = "Or using           &"
-
-[node name="WasdIcon" type="Sprite2D" parent="instructions/Label2"]
-position = Vector2(115, 12)
-scale = Vector2(0.424129, 0.378425)
-texture = ExtResource("5_sglsf")
 
 [node name="Label3" type="Label" parent="instructions"]
 offset_left = 300.0
@@ -116,12 +107,24 @@ anchor_left = 0.588
 anchor_top = -0.334
 anchor_right = 0.588
 anchor_bottom = -0.334
-offset_left = 423.624
-offset_top = 88.432
-offset_right = 722.624
-offset_bottom = 147.432
+offset_left = 422.624
+offset_top = 9.43199
+offset_right = 721.624
+offset_bottom = 131.432
 text = "Watch out of falling!
-Use the trampoline to your advantage."
+Use the trampoline to your advantage.
+It is tricky, press                              when
+you are on the trampoline."
+
+[node name="ArrowsIcon" type="Sprite2D" parent="instructions"]
+position = Vector2(161.75, -91.875)
+scale = Vector2(0.339583, 0.324713)
+texture = ExtResource("4_0vt3d")
+
+[node name="WasdIcon" type="Sprite2D" parent="instructions"]
+position = Vector2(161.75, -57.875)
+scale = Vector2(0.399254, 0.386986)
+texture = ExtResource("5_sglsf")
 
 [node name="collectables" type="Node" parent="."]
 
@@ -146,3 +149,8 @@ position = Vector2(30, -57)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 position = Vector2(-466, 297)
 shape = SubResource("WorldBoundaryShape2D_2wjyw")
+
+[node name="SpacebarIcon" type="Sprite2D" parent="."]
+position = Vector2(1288, -141)
+scale = Vector2(0.543689, 0.425)
+texture = ExtResource("10_wixej")
