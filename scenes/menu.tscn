@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dc85mwkssfmwq"]
+[gd_scene load_steps=9 format=3 uid="uid://dc85mwkssfmwq"]
 
 [ext_resource type="Script" path="res://scenes/menu.gd" id="1_ogxpe"]
 [ext_resource type="Texture2D" uid="uid://d28d5e26w6ykk" path="res://Assets/icons/Play_button.png" id="2_mgy1y"]
@@ -7,11 +7,16 @@
 [ext_resource type="Texture2D" uid="uid://xunx7phf8oii" path="res://Assets/icons/Credit_button.png" id="3_umck4"]
 [ext_resource type="Texture2D" uid="uid://bh6i6647wy5ga" path="res://Assets/icons/Exit_button.png" id="4_i0x5w"]
 [ext_resource type="Texture2D" uid="uid://cfxbl300q4i2q" path="res://Assets/icons/Tutorial_button.png" id="5_rccjx"]
+[ext_resource type="AudioStream" uid="uid://c7peh6f1btacj" path="res://Assets/audio/menu_bgm.mp3" id="8_3352j"]
 
 [node name="menu" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_ogxpe")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_3352j")
+autoplay = true
 
 [node name="Pixil-layer-backgroundCopy" type="Sprite2D" parent="."]
 position = Vector2(0.250005, 2.5)

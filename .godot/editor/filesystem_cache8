@@ -1,12 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1737301847
+::res://::1737308077
 icon.svg::CompressedTexture2D::5732131696152513503::1737226176::1737296833::1::::<><>::
 README.md::TextFile::-1::1737233963::0::1::::<><>::
 ::res://Assets/::1737301854
-::res://Assets/audio/::1737296832
+::res://Assets/audio/::1737308108
 audio.txt::TextFile::-1::1737226176::0::1::::<><>::
-Damtaro - Space (freetouse.com).mp3::AudioStreamMP3::5879045324843394009::1737233889::1737296832::1::::<><>::
-Walen - Gameboy (freetouse.com).mp3::AudioStreamMP3::8030275783581005184::1737233889::1737296832::1::::<><>::
+game_bgm.mp3::AudioStreamMP3::8030275783581005184::1737233889::1737308108::1::::<><>::
+menu_bgm.mp3::AudioStreamMP3::7050107035773815925::1737305216::1737308889::1::::<><>::
+tutorial_bgm.mp3::AudioStreamMP3::5879045324843394009::1737233889::1737308868::1::::<><>::
 ::res://Assets/icons/::1737296833
 arrows_icon.png::CompressedTexture2D::3905391603642955995::1737296452::1737296833::1::::<><>::
 Credit_button.png::CompressedTexture2D::1656463057167030984::1737236459::1737296833::1::::<><>::
@@ -16,7 +17,7 @@ LogoGameJam.png::CompressedTexture2D::5805860697771418564::1737233963::173729683
 Play_button.png::CompressedTexture2D::9122721273227860278::1737235077::1737296833::1::::<><>::
 Tutorial_button.png::CompressedTexture2D::5171348145077790606::1737235865::1737296833::1::::<><>::
 wasd_icon.png::CompressedTexture2D::1547012916372332962::1737296452::1737296833::1::::<><>::
-::res://Assets/images/::1737303481
+::res://Assets/images/::1737303496
 back.png::CompressedTexture2D::4655248554859819300::1737233963::1737296833::1::::<><>::
 bird frame 2.png::CompressedTexture2D::119775808053891722::1737236872::1737296833::1::::<><>::
 bird frame 3.png::CompressedTexture2D::7939999403250342449::1737236872::1737296833::1::::<><>::
@@ -59,16 +60,16 @@ yellow-ant.png::CompressedTexture2D::8780790789164406471::1737226079::1737296833
 sounds.txt::TextFile::-1::1737226176::0::1::::<><>::
 ::res://documentation/::1737226176
 documentation.txt::TextFile::-1::1737226176::0::1::::<><>::
-::res://scenes/::1737300880
-bird.tscn::PackedScene::2755432891781789640::1737300880::0::1::::<><>::uid://baqvufxx4dn4u::::res://Assets/images/pixil-layer-bird frame 1.png<>uid://dxa7a4b7o1beb::::res://Assets/images/pixil-layer-bird frame 2.png<>uid://co8b4h0b2ccml::::res://Assets/images/pixil-layer-bird frame 5.png<>uid://covf03asiwl1q::::res://Assets/images/pixil-layer-bird frame 4.png<>uid://d3ex4ln67yxyh::::res://Assets/images/pixil-layer-bird frame 3.png
-droplet.tscn::PackedScene::2920322437917357657::1737300880::0::1::::<><>::uid://d1qo0xmiqfb4w::::res://Assets/images/waterdrop.png<>res://scripts/droplet.gd
-menu.tscn::PackedScene::7369608315353043380::1737300880::0::1::::<><>::res://scenes/menu.gd<>uid://d28d5e26w6ykk::::res://Assets/icons/Play_button.png<>uid://xunx7phf8oii::::res://Assets/icons/Credit_button.png<>uid://bh6i6647wy5ga::::res://Assets/icons/Exit_button.png<>uid://cfxbl300q4i2q::::res://Assets/icons/Tutorial_button.png
-menu.gd::GDScript::-1::1737300741::0::1::::<>Control<>::
+::res://scenes/::1737308667
+bird.tscn::PackedScene::2755432891781789640::1737308667::0::1::::<><>::uid://baqvufxx4dn4u::::res://Assets/images/pixil-layer-bird frame 1.png<>uid://dxa7a4b7o1beb::::res://Assets/images/pixil-layer-bird frame 2.png<>uid://co8b4h0b2ccml::::res://Assets/images/pixil-layer-bird frame 5.png<>uid://covf03asiwl1q::::res://Assets/images/pixil-layer-bird frame 4.png<>uid://d3ex4ln67yxyh::::res://Assets/images/pixil-layer-bird frame 3.png
+droplet.tscn::PackedScene::2920322437917357657::1737308667::0::1::::<><>::uid://d1qo0xmiqfb4w::::res://Assets/images/waterdrop.png<>res://scripts/droplet.gd
+menu.tscn::PackedScene::7369608315353043380::1737308667::0::1::::<><>::res://scenes/menu.gd<>uid://d28d5e26w6ykk::::res://Assets/icons/Play_button.png<>uid://b8c1bpx7ljq4k::::res://Assets/images/pixil-layer-Background Copy.png<>uid://q4pkhj7putu2::::res://Assets/images/menutitle.png<>uid://xunx7phf8oii::::res://Assets/icons/Credit_button.png<>uid://bh6i6647wy5ga::::res://Assets/icons/Exit_button.png<>uid://cfxbl300q4i2q::::res://Assets/icons/Tutorial_button.png<>uid://cp04aukhi5q3r::::res://Assets/audio/tutorial_bgm.mp3
+menu.gd::GDScript::-1::1737304308::0::1::::<>Control<>::
 scenes.txt::TextFile::-1::1737226176::0::1::::<><>::
-secret_tile.tscn::PackedScene::4990638644520271500::1737300880::0::1::::<><>::uid://b7lbi7w5lja01::::res://Assets/images/back.png
-seed.tscn::PackedScene::3376613130799743025::1737300880::0::1::::<><>::uid://bwak52gmhscim::::res://Assets/images/seed.png<>res://scripts/seed.gd
-sun.tscn::PackedScene::7377366365400440131::1737300880::0::1::::<><>::uid://jmd8yekh6fg6::::res://Assets/images/sun02.png<>res://scripts/sun.gd
-tutorial_lvl.tscn::PackedScene::545487897438357751::1737300880::0::1::::<><>::res://scripts/tutorial_lvl.gd<>uid://ctfymaie4tqq8::::res://Assets/images/tiles.png<>uid://bodwlbvih3ko4::::res://scenes/seed.tscn<>uid://bvv2h14u386gl::::res://Assets/icons/arrows_icon.png<>uid://wbncuxb8tbaw::::res://Assets/icons/wasd_icon.png<>uid://bhuvjwf6273a0::::res://scenes/droplet.tscn<>uid://dddwe7854uwlf::::res://scenes/sun.tscn<>uid://cddrdbjf85cxw::::res://scenes/secret_tile.tscn
+secret_tile.tscn::PackedScene::4990638644520271500::1737308667::0::1::::<><>::uid://b7lbi7w5lja01::::res://Assets/images/back.png
+seed.tscn::PackedScene::3376613130799743025::1737308667::0::1::::<><>::uid://bwak52gmhscim::::res://Assets/images/seed.png<>res://scripts/seed.gd
+sun.tscn::PackedScene::7377366365400440131::1737308667::0::1::::<><>::uid://jmd8yekh6fg6::::res://Assets/images/sun02.png<>res://scripts/sun.gd
+tutorial_lvl.tscn::PackedScene::545487897438357751::1737308667::0::1::::<><>::res://scripts/tutorial_lvl.gd<>uid://ctfymaie4tqq8::::res://Assets/images/tiles.png<>uid://bodwlbvih3ko4::::res://scenes/seed.tscn<>uid://bvv2h14u386gl::::res://Assets/icons/arrows_icon.png<>uid://wbncuxb8tbaw::::res://Assets/icons/wasd_icon.png<>uid://bhuvjwf6273a0::::res://scenes/droplet.tscn<>uid://dddwe7854uwlf::::res://scenes/sun.tscn<>uid://cddrdbjf85cxw::::res://scenes/secret_tile.tscn<>uid://cp04aukhi5q3r::::res://Assets/audio/tutorial_bgm.mp3
 ::res://scripts/::1737296452
 droplet.gd::GDScript::-1::1737296452::0::1::::<>Area2D<>::
 scripts.txt::TextFile::-1::1737226176::0::1::::<><>::

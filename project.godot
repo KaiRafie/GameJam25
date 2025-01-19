@@ -19,6 +19,16 @@ config/icon="res://icon.svg"
 
 project/assembly_name="RTR"
 
+[importer_defaults]
+
+mp3={
+"bar_beats": 4,
+"beat_count": 0,
+"bpm": 0,
+"loop": false,
+"loop_offset": 0
+}
+
 [input]
 
 move_left={
