@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://dwdr0yr01r047"]
 
-[ext_resource type="Texture2D" uid="uid://div5vg60y01cm" path="res://Assets/images/red-ant.png" id="1_mb5ng"]
+[ext_resource type="Texture2D" uid="uid://cepes2qx8aysb" path="res://Assets/images/red-ant.png" id="1_mb5ng"]
 [ext_resource type="Script" path="res://scripts/red_ant.gd" id="1_wkwd6"]
 [ext_resource type="PackedScene" uid="uid://7w2e556u8fk1" path="res://scenes/killzone.tscn" id="2_ynr06"]
 
