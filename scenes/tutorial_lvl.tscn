@@ -99,22 +99,12 @@ text = "Watch out of falling!
 Use the trampoline to your advantage."
 
 [node name="ArrowsIcon" type="Sprite2D" parent="instructions"]
-position = Vector2(159, -93)
+position = Vector2(161.75, -91.875)
 scale = Vector2(0.339583, 0.324713)
 texture = ExtResource("4_0vt3d")
 
 [node name="WasdIcon" type="Sprite2D" parent="instructions"]
-position = Vector2(159, -59)
-scale = Vector2(0.399254, 0.386986)
-texture = ExtResource("5_sglsf")
-
-[node name="ArrowsIcon2" type="Sprite2D" parent="instructions"]
-position = Vector2(159, -93)
-scale = Vector2(0.339583, 0.324713)
-texture = ExtResource("4_0vt3d")
-
-[node name="WasdIcon2" type="Sprite2D" parent="instructions"]
-position = Vector2(159, -59)
+position = Vector2(161.75, -57.875)
 scale = Vector2(0.399254, 0.386986)
 texture = ExtResource("5_sglsf")
 
