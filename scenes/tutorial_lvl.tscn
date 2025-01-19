@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://h1idurg6al0j"]
+[gd_scene load_steps=14 format=3 uid="uid://h1idurg6al0j"]
 
 [ext_resource type="Script" path="res://scripts/tutorial_lvl.gd" id="1_8cjb7"]
 [ext_resource type="Texture2D" uid="uid://ctfymaie4tqq8" path="res://Assets/images/tiles.png" id="1_xnqv0"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dddwe7854uwlf" path="res://scenes/sun.tscn" id="7_jwcy2"]
 [ext_resource type="PackedScene" uid="uid://cddrdbjf85cxw" path="res://scenes/secret_tile.tscn" id="8_3qeq1"]
 [ext_resource type="PackedScene" path="res://scenes/killzone.tscn" id="9_231ii"]
+[ext_resource type="Texture2D" uid="uid://dapl1pgm6xbri" path="res://Assets/icons/spacebar_icon.png" id="10_wixej"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dmxo2"]
 texture = ExtResource("1_xnqv0")
@@ -91,12 +92,14 @@ anchor_left = 0.588
 anchor_top = -0.334
 anchor_right = 0.588
 anchor_bottom = -0.334
-offset_left = 423.624
-offset_top = 88.432
-offset_right = 722.624
-offset_bottom = 147.432
+offset_left = 422.624
+offset_top = 9.43199
+offset_right = 721.624
+offset_bottom = 131.432
 text = "Watch out of falling!
-Use the trampoline to your advantage."
+Use the trampoline to your advantage.
+It is tricky, press                              when
+you are on the trampoline."
 
 [node name="ArrowsIcon" type="Sprite2D" parent="instructions"]
 position = Vector2(161.75, -91.875)
@@ -131,3 +134,8 @@ position = Vector2(30, -57)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 position = Vector2(-466, 297)
 shape = SubResource("WorldBoundaryShape2D_2wjyw")
+
+[node name="SpacebarIcon" type="Sprite2D" parent="."]
+position = Vector2(1288, -141)
+scale = Vector2(0.543689, 0.425)
+texture = ExtResource("10_wixej")
