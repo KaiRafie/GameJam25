@@ -1,11 +1,12 @@
+Timer
 CollisionShape2D
+Area2D
 AnimatedSprite2D
 AnimatableBody2D
 Node
 Sprite2D
 StaticBody2D
 Label
-Area2D
 CollisionPolygon2D
 RichTextLabel
 Camera2D
