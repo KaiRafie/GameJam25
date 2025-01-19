@@ -31,6 +31,9 @@ sources/0 = SubResource("TileSetAtlasSource_mmcjf")
 [node name="Seed" parent="." instance=ExtResource("1_epi0y")]
 position = Vector2(-61, -80)
 
+[node name="Camera2D" type="Camera2D" parent="Seed"]
+zoom = Vector2(4, 4)
+
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
 position = Vector2(1, 0)

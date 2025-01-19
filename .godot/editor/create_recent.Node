@@ -1,3 +1,4 @@
+Camera2D
 TileMap
 CollisionShape2D
 AnimatedSprite2D
@@ -9,5 +10,4 @@ Label
 Area2D
 CollisionPolygon2D
 RichTextLabel
-Camera2D
 CharacterBody2D
