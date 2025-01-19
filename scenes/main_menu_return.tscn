@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cue8gcsym5u3d"]
+
+[ext_resource type="Script" path="res://scripts/main_menu_return.gd" id="1_r57fg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1phyw"]
+size = Vector2(62, 57)
+
+[node name="mainMenuReturn" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_r57fg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_1phyw")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://h1idurg6al0j"]
+[gd_scene load_steps=17 format=3 uid="uid://h1idurg6al0j"]
 
 [ext_resource type="Script" path="res://scripts/tutorial_lvl.gd" id="1_8cjb7"]
 [ext_resource type="Texture2D" uid="uid://ctfymaie4tqq8" path="res://Assets/images/tiles.png" id="1_xnqv0"]
@@ -12,6 +12,7 @@
 [ext_resource type="AudioStream" uid="uid://cp04aukhi5q3r" path="res://Assets/audio/tutorial_bgm.mp3" id="9_0g7f0"]
 [ext_resource type="PackedScene" uid="uid://7w2e556u8fk1" path="res://scenes/killzone.tscn" id="9_231ii"]
 [ext_resource type="Texture2D" uid="uid://dapl1pgm6xbri" path="res://Assets/icons/spacebar_icon.png" id="10_wixej"]
+[ext_resource type="PackedScene" uid="uid://cue8gcsym5u3d" path="res://scenes/main_menu_return.tscn" id="13_ffd20"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dmxo2"]
 texture = ExtResource("1_xnqv0")
@@ -128,9 +129,9 @@ offset_top = 55.432
 offset_right = 723.624
 offset_bottom = 177.432
 text = "Watch out of falling!
-Use the trampoline to your advantage.
+Use your legs to your advantage.
 It is tricky, press                              when
-you are on the trampoline."
+you are on the edge."
 
 [node name="ArrowsIcon" type="Sprite2D" parent="instructions"]
 position = Vector2(161.75, -91.875)
@@ -170,3 +171,6 @@ shape = SubResource("WorldBoundaryShape2D_2wjyw")
 position = Vector2(1290, -95)
 scale = Vector2(0.543689, 0.425)
 texture = ExtResource("10_wixej")
+
+[node name="mainMenuReturn" parent="." instance=ExtResource("13_ffd20")]
+position = Vector2(1872, -56)
