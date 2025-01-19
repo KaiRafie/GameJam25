@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://bfi0tvgpqpkno"]
+
+[ext_resource type="Texture2D" uid="uid://baqvufxx4dn4u" path="res://Assets/images/pixil-layer-bird frame 1.png" id="1_spohh"]
+[ext_resource type="Texture2D" uid="uid://dxa7a4b7o1beb" path="res://Assets/images/pixil-layer-bird frame 2.png" id="2_si1c4"]
+[ext_resource type="Texture2D" uid="uid://co8b4h0b2ccml" path="res://Assets/images/pixil-layer-bird frame 5.png" id="3_i8rx6"]
+[ext_resource type="Texture2D" uid="uid://covf03asiwl1q" path="res://Assets/images/pixil-layer-bird frame 4.png" id="4_fd20j"]
+[ext_resource type="Texture2D" uid="uid://d3ex4ln67yxyh" path="res://Assets/images/pixil-layer-bird frame 3.png" id="5_28mb6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uydpl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_spohh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_si1c4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_i8rx6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_fd20j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_28mb6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_fd20j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_i8rx6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_si1c4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x7yq1"]
+
+[node name="Bird" type="AnimatableBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_uydpl")
+autoplay = "default"
+frame_progress = 0.450616
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-10, 12)
+shape = SubResource("CircleShape2D_x7yq1")
