@@ -10,7 +10,6 @@
 [ext_resource type="PackedScene" uid="uid://cddrdbjf85cxw" path="res://scenes/secret_tile.tscn" id="8_3qeq1"]
 [ext_resource type="PackedScene" path="res://scenes/killzone.tscn" id="9_231ii"]
 
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dmxo2"]
 texture = ExtResource("1_xnqv0")
 texture_region_size = Vector2i(26, 26)
@@ -64,22 +63,12 @@ offset_right = 184.0
 offset_bottom = -75.0
 text = "Roll left and right using           &"
 
-[node name="ArrowsIcon" type="Sprite2D" parent="instructions/Label"]
-position = Vector2(230, 12)
-scale = Vector2(0.35625, 0.307471)
-texture = ExtResource("4_0vt3d")
-
 [node name="Label2" type="Label" parent="instructions"]
 offset_left = 44.0
 offset_top = -70.0
 offset_right = 210.0
 offset_bottom = -44.0
 text = "Or using           &"
-
-[node name="WasdIcon" type="Sprite2D" parent="instructions/Label2"]
-position = Vector2(115, 12)
-scale = Vector2(0.424129, 0.378425)
-texture = ExtResource("5_sglsf")
 
 [node name="Label3" type="Label" parent="instructions"]
 offset_left = 300.0
@@ -108,6 +97,26 @@ offset_right = 722.624
 offset_bottom = 147.432
 text = "Watch out of falling!
 Use the trampoline to your advantage."
+
+[node name="ArrowsIcon" type="Sprite2D" parent="instructions"]
+position = Vector2(159, -93)
+scale = Vector2(0.339583, 0.324713)
+texture = ExtResource("4_0vt3d")
+
+[node name="WasdIcon" type="Sprite2D" parent="instructions"]
+position = Vector2(159, -59)
+scale = Vector2(0.399254, 0.386986)
+texture = ExtResource("5_sglsf")
+
+[node name="ArrowsIcon2" type="Sprite2D" parent="instructions"]
+position = Vector2(159, -93)
+scale = Vector2(0.339583, 0.324713)
+texture = ExtResource("4_0vt3d")
+
+[node name="WasdIcon2" type="Sprite2D" parent="instructions"]
+position = Vector2(159, -59)
+scale = Vector2(0.399254, 0.386986)
+texture = ExtResource("5_sglsf")
 
 [node name="collectables" type="Node" parent="."]
 
