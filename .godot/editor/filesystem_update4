@@ -1,8 +1,0 @@
-res://scenes/tutorial_lvl.tscn
-res://scripts/seed.gd
-res://scenes/seed.tscn
-res://scenes/sun.tscn
-res://scenes/droplet.tscn
-res://scripts/droplet.gd
-res://scripts/sun.gd
-res://scenes/secret_tile.tscn
