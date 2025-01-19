@@ -1,13 +1,20 @@
+<<<<<<< HEAD
 Camera2D
+=======
+<<<<<<< HEAD
+>>>>>>> dev
 TileMap
+=======
+Timer
+>>>>>>> origin/ibrahim_enemies
 CollisionShape2D
+Area2D
 AnimatedSprite2D
 AnimatableBody2D
 Node
 Sprite2D
 StaticBody2D
 Label
-Area2D
 CollisionPolygon2D
 RichTextLabel
 CharacterBody2D
