@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://btj20dv1obnwi"
+=======
+uid="uid://byviq04whv8du"
+>>>>>>> origin/Kaci-seedAnimation
 path="res://.godot/imported/seedleg1.png-bed5edf041f62eab16f30f8e6840de26.ctex"
 metadata={
 "vram_texture": false

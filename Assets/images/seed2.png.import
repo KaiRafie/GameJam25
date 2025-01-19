@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://xh85gshbgjkx"
-=======
-uid="uid://kgvvjtkby8cw"
->>>>>>> origin/Kaci-seedAnimation
-path="res://.godot/imported/seedTop4leg.png-cc8ae8f27d94d098647aeacc6aefdf10.ctex"
+uid="uid://din0n3jn648tj"
+path="res://.godot/imported/seed2.png-032715f6396ac8483728f0a41e2482ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/images/seedTop4leg.png"
-dest_files=["res://.godot/imported/seedTop4leg.png-cc8ae8f27d94d098647aeacc6aefdf10.ctex"]
+source_file="res://Assets/images/seed2.png"
+dest_files=["res://.godot/imported/seed2.png-032715f6396ac8483728f0a41e2482ab.ctex"]
 
 [params]
 
