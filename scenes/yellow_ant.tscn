@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=3 uid="uid://c3u47fceto5j7"]
+
+[ext_resource type="Script" path="res://scripts/yellow_ant.gd" id="1_gjjx6"]
+[ext_resource type="Texture2D" uid="uid://dxdqluwxy45pj" path="res://Assets/images/yellow-ant.png" id="1_s7xwt"]
+[ext_resource type="PackedScene" uid="uid://7w2e556u8fk1" path="res://scenes/killzone.tscn" id="2_v0tih"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qcb7u"]
+atlas = ExtResource("1_s7xwt")
+region = Rect2(0, 0, 26, 26)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e71y8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qcb7u")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kh1h4"]
+size = Vector2(25, 24)
+
+[node name="Yellow ant" type="Node2D"]
+script = ExtResource("1_gjjx6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_e71y8")
+
+[node name="Killzone" parent="." instance=ExtResource("2_v0tih")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_kh1h4")
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+target_position = Vector2(12, 0)
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+target_position = Vector2(-13, 0)

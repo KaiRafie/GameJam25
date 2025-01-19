@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://dcxtvloia241v"]
+
+[ext_resource type="Script" path="res://scripts/fnish_line.gd" id="1_ardvk"]
+[ext_resource type="Texture2D" uid="uid://cr705y0mnc2uu" path="res://Assets/images/hole.png" id="2_pwwuf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i8ad0"]
+size = Vector2(66, 58)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7n0o7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_pwwuf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="fnishLine" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_ardvk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_i8ad0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(4.76837e-07, 14.5)
+scale = Vector2(0.776471, 0.604167)
+sprite_frames = SubResource("SpriteFrames_7n0o7")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
