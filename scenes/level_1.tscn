@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://dv5gxy4h4ow0"]
+[gd_scene load_steps=8 format=3 uid="uid://catp5i8famtnw"]
 
+[ext_resource type="AudioStream" uid="uid://dmn6p7clqfsui" path="res://Assets/audio/game_bgm.mp3" id="1_8ymy0"]
 [ext_resource type="PackedScene" uid="uid://bodwlbvih3ko4" path="res://scenes/seed.tscn" id="1_epi0y"]
 [ext_resource type="Texture2D" uid="uid://ctfymaie4tqq8" path="res://Assets/images/tiles.png" id="2_u0ao5"]
 [ext_resource type="PackedScene" uid="uid://dddwe7854uwlf" path="res://scenes/sun.tscn" id="3_eg7bc"]
@@ -32,6 +33,10 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_mmcjf")
 
 [node name="level_1" type="Node2D"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_8ymy0")
+autoplay = true
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
