@@ -8,9 +8,10 @@
 [ext_resource type="PackedScene" uid="uid://bhuvjwf6273a0" path="res://scenes/droplet.tscn" id="6_icnc8"]
 [ext_resource type="PackedScene" uid="uid://dddwe7854uwlf" path="res://scenes/sun.tscn" id="7_jwcy2"]
 [ext_resource type="PackedScene" uid="uid://cddrdbjf85cxw" path="res://scenes/secret_tile.tscn" id="8_3qeq1"]
-[ext_resource type="PackedScene" uid="uid://7w2e556u8fk1" path="res://killzone.tscn" id="9_231ii"]
+[ext_resource type="PackedScene" path="res://scenes/killzone.tscn" id="9_231ii"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n5rir"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dmxo2"]
 texture = ExtResource("1_xnqv0")
 texture_region_size = Vector2i(26, 26)
 0:0/0 = 0
@@ -29,7 +30,7 @@ texture_region_size = Vector2i(26, 26)
 [sub_resource type="TileSet" id="TileSet_mpxpa"]
 tile_size = Vector2i(26, 26)
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_n5rir")
+sources/0 = SubResource("TileSetAtlasSource_dmxo2")
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_2wjyw"]
 distance = -60.0
