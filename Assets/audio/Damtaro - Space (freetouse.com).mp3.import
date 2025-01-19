@@ -3,12 +3,11 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://cp04aukhi5q3r"
-path="res://.godot/imported/Damtaro - Space (freetouse.com).mp3-38692b96271132c322e0e2c928863c3f.mp3str"
+valid=false
 
 [deps]
 
 source_file="res://Assets/audio/Damtaro - Space (freetouse.com).mp3"
-dest_files=["res://.godot/imported/Damtaro - Space (freetouse.com).mp3-38692b96271132c322e0e2c928863c3f.mp3str"]
 
 [params]
 

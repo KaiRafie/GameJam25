@@ -3,12 +3,11 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dmn6p7clqfsui"
-path="res://.godot/imported/Walen - Gameboy (freetouse.com).mp3-5259c0ea8955d1ae2957bf40b6121567.mp3str"
+valid=false
 
 [deps]
 
 source_file="res://Assets/audio/Walen - Gameboy (freetouse.com).mp3"
-dest_files=["res://.godot/imported/Walen - Gameboy (freetouse.com).mp3-5259c0ea8955d1ae2957bf40b6121567.mp3str"]
 
 [params]
 
