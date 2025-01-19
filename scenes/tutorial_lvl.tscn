@@ -173,4 +173,4 @@ scale = Vector2(0.543689, 0.425)
 texture = ExtResource("10_wixej")
 
 [node name="mainMenuReturn" parent="." instance=ExtResource("13_ffd20")]
-position = Vector2(1872, -56)
+position = Vector2(1880, -27)

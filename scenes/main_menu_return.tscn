@@ -1,9 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://cue8gcsym5u3d"]
+[gd_scene load_steps=5 format=3 uid="uid://cue8gcsym5u3d"]
 
 [ext_resource type="Script" path="res://scripts/main_menu_return.gd" id="1_r57fg"]
+[ext_resource type="Texture2D" uid="uid://cr705y0mnc2uu" path="res://Assets/images/hole.png" id="2_xx7ut"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1phyw"]
 size = Vector2(62, 57)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nsaak"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xx7ut")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="mainMenuReturn" type="Area2D"]
 collision_mask = 2
@@ -12,5 +24,10 @@ script = ExtResource("1_r57fg")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_1phyw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 15)
+scale = Vector2(0.729412, 0.583333)
+sprite_frames = SubResource("SpriteFrames_nsaak")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
