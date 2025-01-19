@@ -33,3 +33,5 @@
 
 *.godot
 .godot/
+.import/
+export.cfg
