@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://h1idurg6al0j"]
+[gd_scene load_steps=16 format=3 uid="uid://h1idurg6al0j"]
 
 [ext_resource type="Script" path="res://scripts/tutorial_lvl.gd" id="1_8cjb7"]
 [ext_resource type="Texture2D" uid="uid://ctfymaie4tqq8" path="res://Assets/images/tiles.png" id="1_xnqv0"]
@@ -9,11 +9,9 @@
 [ext_resource type="PackedScene" uid="uid://bhuvjwf6273a0" path="res://scenes/droplet.tscn" id="6_icnc8"]
 [ext_resource type="PackedScene" uid="uid://dddwe7854uwlf" path="res://scenes/sun.tscn" id="7_jwcy2"]
 [ext_resource type="PackedScene" uid="uid://cddrdbjf85cxw" path="res://scenes/secret_tile.tscn" id="8_3qeq1"]
-
+[ext_resource type="AudioStream" uid="uid://cp04aukhi5q3r" path="res://Assets/audio/tutorial_bgm.mp3" id="9_0g7f0"]
 [ext_resource type="PackedScene" uid="uid://7w2e556u8fk1" path="res://scenes/killzone.tscn" id="9_231ii"]
 [ext_resource type="Texture2D" uid="uid://dapl1pgm6xbri" path="res://Assets/icons/spacebar_icon.png" id="10_wixej"]
-[ext_resource type="AudioStream" uid="uid://cp04aukhi5q3r" path="res://Assets/audio/tutorial_bgm.mp3" id="9_0g7f0"]
-
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dmxo2"]
 texture = ExtResource("1_xnqv0")
@@ -42,14 +40,13 @@ distance = -60.0
 [node name="tutorialLvl" type="Node2D"]
 script = ExtResource("1_8cjb7")
 
-
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("2_hgqxp")
+
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("9_0g7f0")
 autoplay = true
-
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
@@ -68,28 +65,26 @@ zoom = Vector2(3, 3)
 limit_bottom = 232
 limit_smoothed = true
 
-[node name="CanvasLayer" type="CanvasLayer" parent="Seed"]
-
-[node name="sunScore" type="Label" parent="Seed/CanvasLayer"]
+[node name="sunScore" type="Label" parent="Seed"]
 unique_name_in_owner = true
-offset_left = -76.0
-offset_top = -155.0
-offset_right = -36.0
-offset_bottom = -132.0
-text = "hello"
+offset_left = -183.0
+offset_top = -126.0
+offset_right = -143.0
+offset_bottom = -103.0
+text = "0"
 
-[node name="dropletScore" type="Label" parent="Seed/CanvasLayer"]
+[node name="dropletScore" type="Label" parent="Seed"]
 unique_name_in_owner = true
 anchors_preset = -1
 anchor_left = 0.027
 anchor_top = -0.092
 anchor_right = 0.027
 anchor_bottom = -0.092
-offset_left = -51.104
-offset_top = -93.384
-offset_right = -12.104
-offset_bottom = 5.616
-text = "hello"
+offset_left = -126.0
+offset_top = -125.0
+offset_right = -87.0
+offset_bottom = -96.0
+text = "0"
 
 [node name="instructions" type="Node" parent="."]
 
