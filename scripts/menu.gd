@@ -12,11 +12,11 @@ func _process(delta: float) -> void:
 
 
 func _on_PlayButton_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://scenes/level_1.tscn")
 
 
 func _on_CreditsButton_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://scenes/credit.tscn")
 
 
 func _on_ExitButton_pressed() -> void:

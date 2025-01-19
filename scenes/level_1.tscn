@@ -1,5 +1,6 @@
 [gd_scene load_steps=14 format=3 uid="uid://dv5gxy4h4ow0"]
 
+[ext_resource type="AudioStream" uid="uid://dmn6p7clqfsui" path="res://Assets/audio/game_bgm.mp3" id="1_8ymy0"]
 [ext_resource type="PackedScene" uid="uid://bodwlbvih3ko4" path="res://scenes/seed.tscn" id="1_epi0y"]
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_jpca5"]
 [ext_resource type="Texture2D" uid="uid://ctfymaie4tqq8" path="res://Assets/images/tiles.png" id="2_u0ao5"]
