@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://h1idurg6al0j"]
+[gd_scene load_steps=14 format=3 uid="uid://h1idurg6al0j"]
 
 [ext_resource type="Script" path="res://scripts/tutorial_lvl.gd" id="1_8cjb7"]
 [ext_resource type="Texture2D" uid="uid://ctfymaie4tqq8" path="res://Assets/images/tiles.png" id="1_xnqv0"]
+[ext_resource type="Script" path="res://scripts/game_manager.gd" id="2_hgqxp"]
 [ext_resource type="PackedScene" uid="uid://bodwlbvih3ko4" path="res://scenes/seed.tscn" id="2_rimfn"]
 [ext_resource type="Texture2D" uid="uid://bvv2h14u386gl" path="res://Assets/icons/arrows_icon.png" id="4_0vt3d"]
 [ext_resource type="Texture2D" uid="uid://wbncuxb8tbaw" path="res://Assets/icons/wasd_icon.png" id="5_sglsf"]
@@ -9,7 +10,6 @@
 [ext_resource type="PackedScene" uid="uid://dddwe7854uwlf" path="res://scenes/sun.tscn" id="7_jwcy2"]
 [ext_resource type="PackedScene" uid="uid://cddrdbjf85cxw" path="res://scenes/secret_tile.tscn" id="8_3qeq1"]
 [ext_resource type="PackedScene" path="res://scenes/killzone.tscn" id="9_231ii"]
-
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dmxo2"]
 texture = ExtResource("1_xnqv0")
@@ -37,6 +37,20 @@ distance = -60.0
 
 [node name="tutorialLvl" type="Node2D"]
 script = ExtResource("1_8cjb7")
+
+[node name="GameManager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("2_hgqxp")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="GameManager"]
+
+[node name="sunScore" type="Label" parent="GameManager/CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="dropletScore" type="Label" parent="GameManager/CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 23.0
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
