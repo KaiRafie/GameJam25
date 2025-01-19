@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://0fvfls5pbipu"]
+
+[ext_resource type="Texture2D" uid="uid://jmd8yekh6fg6" path="res://Assets/images/sun02.png" id="1_4vdjw"]
+[ext_resource type="Script" path="res://scripts/sun.gd" id="1_8fcrg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_glk6n"]
+atlas = ExtResource("1_4vdjw")
+region = Rect2(0, 0, 25, 26)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kypd1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_glk6n")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8fdky"]
+radius = 13.0
+
+[node name="sun" type="Area2D"]
+z_index = -1
+collision_mask = 2
+script = ExtResource("1_8fcrg")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_kypd1")
+frame_progress = 0.949632
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_8fdky")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

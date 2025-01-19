@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://b7xc6ypn1lruc"]
+[gd_scene load_steps=6 format=3 uid="uid://bodwlbvih3ko4"]
 
 [ext_resource type="Texture2D" uid="uid://bwak52gmhscim" path="res://Assets/images/seed.png" id="1_2585f"]
 [ext_resource type="Script" path="res://scripts/seed.gd" id="1_gmtc2"]
@@ -22,6 +22,8 @@ animations = [{
 radius = 13.0
 
 [node name="Seed" type="CharacterBody2D"]
+z_index = 5
+collision_layer = 2
 script = ExtResource("1_gmtc2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
